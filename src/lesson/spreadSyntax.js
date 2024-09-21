@@ -16,7 +16,8 @@
 const packageManager = ['npm', 'yarn', 'pnpm'];
 
 function arrayFn(array) {
-  const framework = ['Vue', 'React', 'Svelte'];
+  const framework = ['Vue', 'React', 'Svelte', ...array];
+  return framework;
 }
 
 console.log(arrayFn(packageManager));
@@ -32,4 +33,7 @@ const objectB = {
   version: 3,
 };
 
-console.log();
+// オブジェクトはプロパティのkey名が被ると、後に書かれた方で上書きされる。
+
+const newObject = { ...objectA, ...objectB, routingLibrary: 'Vue Router' }
+console.log(newObject);
