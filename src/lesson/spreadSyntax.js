@@ -2,6 +2,17 @@
 
 // 練習問題
 // 問題 1
+// consoleにpackageManagerとframeworkがマージされた配列が出力されるように、
+// 関数arrayFnの返り値をスプレッド構文を使用して定義してください。
+
+// const packageManager = ['npm', 'yarn', 'pnpm'];
+
+// function arrayFn(array) {
+//   const framework = ['Vue', 'React', 'Svelte'];
+// }
+
+// console.log(arrayFn(packageManager));
+
 const packageManager = ['npm', 'yarn', 'pnpm'];
 
 function arrayFn(array) {

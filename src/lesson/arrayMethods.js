@@ -38,4 +38,7 @@ const newArray = array.map(
     // return { val, className: `c-${val.className}`} // ←だとダメ（valは対象の配列の直下の中身なのでオブジェクト）
   }
 )
+// const newArray = array.map(
+//   (val) => {return { ...val, className: `c-${val.className}`}}
+// )
 console.log(newArray);

@@ -21,3 +21,19 @@ const argObject = {
 };
 
 objectFn(argObject);
+
+
+
+// function nameFun({firstName, middleName = '♡', lastName}) {
+//   return `${firstName}${middleName}${lastName}`;
+// }
+
+const nameFun = ({firstName, middleName = '♡', lastName}) => `${firstName}${middleName}${lastName}`;
+
+const nameObject = {
+  firstName: 'yamada',
+  middleName: '♡',
+  lastName: 'tarou',
+};
+
+console.log(nameFun(nameObject));
